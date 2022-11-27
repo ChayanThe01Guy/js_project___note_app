@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.counter {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.counter .left_side {
+    width: 25%;
+    height: 100%;
+    padding: 15px 0;
+    border-right: 1px solid black;
+    flex-direction: column;
+}
+
+.counter .left_side .addNoteBtn {
+    width: 90%;
+    margin: 15px 5%;
+    padding: 10px 25px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: #00af8c;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.counter .left_side .addNoteBtn:hover {
+    color: #000;
+}
+
+.counter .left_side .noteList_item {
+    width: 90%;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+    background: #eeeeee;
+    cursor: pointer;
+}
+
+.counter .left_side .noteList_item:hover {
+    background: #d0d0d0;
+}
+
+.counter .left_side .noteList_item .noteList_item_title {
+    color: #000;
+    font-size: 25px;
+}
+
+.counter .left_side .noteList_item .noteList_item_body {
+    color: #000;
+    margin: 20px 0;
+}
+
+.counter .left_side .noteList_item .noteList_item_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.counter .left_side .noteList_item .noteList_item_bottom .noteList_item_bottom_btn_area {
+    display: flex;
+    gap: 25px;
+}
+.counter .left_side .noteList_item .noteList_item_bottom .noteList_item_bottom_btn_area .noteList_item_btn {
+    width: 20px;
+}
+
+.counter .left_side .noteList_item .noteList_item_bottom .noteList_item_time {
+    color: #000;
+}
+
+.counter .right_side {
+    width: 75%;
+    height: 100%;
+}
+
+.counter .right_side.hide {
+    visibility: hidden;
+}
+
+.counter .right_side .title_and_btn{
+    display: flex;
+}
+
+.counter .right_side .title_and_btn .btn_area {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #d0d0d0;
+    border-radius: 10px;
+}
+
+.counter .right_side .title_and_btn .btn_area .btn {
+    width: 25px;
+    cursor: pointer;
+}
+
+.counter .right_side .title_and_btn .note_title {
+    width: 90%;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    padding: 20px;
+    font-weight: bold;
+    color: #00af8c;
+}
+
+.counter .right_side .note_body {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    padding: 10px 20px;
+}
